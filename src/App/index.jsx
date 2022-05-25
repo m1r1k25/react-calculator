@@ -1,20 +1,22 @@
-import React, { lazy, Suspense } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { AppStyled } from './components'
+import HomePage from '@/screens/HomePage'
+import SettingsPage from '@/screens/SettingsPage'
 
-import { HOME_PAGE_ROUTE } from '@/constants'
+const App = () => {
+  return (
+    <AppStyled>
+      <Routes>
+        <Route path="/home" element={<HomePage />} />
+        <Route
+          path="/settings"
+          element={<SettingsPage />}
+        />
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+    </AppStyled>
+  )
+}
 
-import Loader from '@/components/Loader'
-
-const HomePage = lazy(() => import('@/pages/Home'))
-
-export default () => (
-  <Suspense fallback={<Loader />}>
-    <Switch>
-      <Route
-        exact
-        path={HOME_PAGE_ROUTE}
-        component={HomePage}
-      />
-    </Switch>
-  </Suspense>
-)
+export default App
