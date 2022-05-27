@@ -7,10 +7,9 @@ export const DisplayWrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
   margin: 0 1rem; 
-  width: 75%;
   height: 5rem;
-  border-bottom: 0.125rem solid ${colors.accent_color};
-  font-size: ${dimensions.xl_3}
+  border-bottom: 0.125rem solid ${colors.border};
+  font-size: ${dimensions.xl_3};
 `
 
 export const DigitOperationWrapper = styled.div`
