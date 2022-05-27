@@ -1,8 +1,19 @@
 import React from 'react'
-import { HistoryWrapper } from './components'
+import {
+  HistoryLine,
+  HistoryHeader,
+  HistoryWrapper,
+} from './components'
 
 const History = () => {
-  return <HistoryWrapper />
+  return (
+    <HistoryWrapper>
+      <HistoryHeader>History</HistoryHeader>
+      <HistoryLine>11 + 23</HistoryLine>
+      <HistoryLine>11 + 23</HistoryLine>
+      <HistoryLine>11 + 23</HistoryLine>
+    </HistoryWrapper>
+  )
 }
 
 export default History

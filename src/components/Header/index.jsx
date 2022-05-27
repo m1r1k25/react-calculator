@@ -7,7 +7,7 @@ import {
 } from './components'
 
 const Header = () => {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(true)
 
   const onHomeClick = () => {
     setActive(true)

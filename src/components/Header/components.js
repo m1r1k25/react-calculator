@@ -22,7 +22,7 @@ export const AppName = styled.div`
 `
 
 export const NavbarItem = styled(Link)`
-  color: ${colors.bg_primary};
+  color: ${props => props.active ? colors.bg_primary : colors.bg_secondary};
   padding-right: ${dimensions.xl};
   font-size: inherit;
   border: none;

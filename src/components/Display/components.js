@@ -8,7 +8,7 @@ export const DisplayWrapper = styled.div`
   justify-content: flex-end;
   margin: 0 1rem; 
   height: 5rem;
-  border-bottom: 0.125rem solid ${colors.border};
+  border-bottom: 0.125rem solid ${colors.bg_secondary};
   font-size: ${dimensions.xl_3};
 `
 
