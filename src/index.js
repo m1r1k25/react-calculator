@@ -9,9 +9,9 @@ import { ThemeProvider } from 'styled-components'
 
 import App from '@/App'
 
-import { store } from '@/store'
 import theme from '@/theme'
 import GlobalStyles from '@/globalStyles'
+import store from './store/index'
 
 ReactDOM.render(
   <Provider store={store}>
